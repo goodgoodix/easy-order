@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid blue;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 255, 0.5);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        border: 1px solid blue;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="send_form_data.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="pin">Pin:</label>
+      <input type="number" id="pin" name="pin" required>
+
+      <label for="landmark">Landmark:</label>
+      <input type="text" id="landmark" name="landmark" required>
+
+      <label for="shoe_size">Size of Shoe:</label>
+      <input type="number" id="shoe_size" name="shoe_size" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
